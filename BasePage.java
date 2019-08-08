@@ -7,7 +7,7 @@ import lombok.Getter;
 
 public abstract class BasePage 
 {
-	@FindBy(xpath="//div[text()='Tasks']")
+	@FindBy(xpath="//span[@class='bottomBorder']/preceding-sibling::div[text()='Tasks']")
 	private @Getter WebElement TaskEle;
 	@FindBy(id="logoutLink")
 	private @Getter WebElement Logoutlink;
