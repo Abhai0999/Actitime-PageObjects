@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import lombok.Getter;
 public class CreateNewProjectPage 
 {
-@FindBy(name="customerId")
+@FindBy(css="select[name='customerId']")
 private @Getter WebElement dropdown;
 @FindBy(name="name")
 private @Getter WebElement ProjectName;

@@ -11,6 +11,9 @@ public abstract class BasePage
 	private @Getter WebElement TaskEle;
 	@FindBy(id="logoutLink")
 	private @Getter WebElement Logoutlink;
+	@FindBy(xpath = "//div[text()='Users']")
+	private @Getter WebElement UserEle;
+	
     public BasePage(WebDriver driver)
 {
 	PageFactory.initElements(driver, this);

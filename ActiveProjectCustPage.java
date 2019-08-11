@@ -20,7 +20,12 @@ private @Getter WebElement Customer;
 private @Getter WebElement CreateNewProject;
 @FindBy(xpath="//span[@class='successmsg']")
 private @Getter WebElement ProjCreatedMsgele;
-
+@FindBy(name="selectedCustomer")
+private @Getter WebElement Customerdrpdown;
+@FindBy(css="input[value='  Show  ']")
+private @Getter WebElement CustrshowBtn;
+@FindBy(xpath="//td[starts-with(@id,'customerNameCell')]//a[contains(@href,'customerId')]")
+private @Getter WebElement CustrNameLink;
 public ActiveProjectCustPage(WebDriver driver)
 
 {

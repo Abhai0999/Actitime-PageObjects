@@ -9,7 +9,7 @@ public class EditCustomerInformation
 {
 @FindBy(xpath="//input[@value='Delete This Customer']")
 private @Getter WebElement DelCustBtn;
-@FindBy(xpath="//input[@value='Delete Customer']")
+@FindBy(id="deleteButton")
 private @Getter WebElement DelCustCnfbtn;
 
 
